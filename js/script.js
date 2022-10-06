@@ -39,5 +39,5 @@ if(!isNaN(travelPrice)){
 document.getElementById("my-h2").innerHTML = travelPrice + ' ' + '€';
 }
 else {
-    document.getElementById("my-h2").innerHTML = 'Inserire nuovamente i Dati'
+    window.location.reload();
 }
