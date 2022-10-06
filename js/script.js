@@ -30,7 +30,14 @@ if(passengerAge <= 18){
 else if(passengerAge >= 65){
     travelPrice = parseFloat((travelPrice - ((travelPrice * 2) / 5)).toFixed(2));
 }
+else {
+    travelPrice = 'Inserire nuovamente i Dati'
+}
 console.log(travelPrice);
 
-document.getElementById("my-h1").innerHTML = travelPrice + ' ' + '€';
-
+if(!isNaN(travelPrice)){
+document.getElementById("my-h2").innerHTML = travelPrice + ' ' + '€';
+}
+else {
+    document.getElementById("my-h2").innerHTML = 'Inserire nuovamente i Dati'
+}
